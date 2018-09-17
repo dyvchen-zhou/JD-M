@@ -1,0 +1,65 @@
+/* 公共样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 防止内容溢出，出现横向滚动条 */
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    /* 手机端特有的点击有高亮 */
+    -webkit-tap-highlight-color: none;
+}
+
+input,
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    /* 移动端默认的组件 */
+    -webkit-appearance: none;
+}
+
+
+/* 公共样式 */
+
+.f_left {
+    float: left;
+}
+
+.f_right {
+    float: right;
+}
+
+.m_r10 {
+    margin-right: 10px;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
